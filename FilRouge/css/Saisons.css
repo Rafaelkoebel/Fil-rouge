@@ -1,0 +1,71 @@
+*{
+    font-family: 'rudaregular',Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 428px;
+    height: 926px;
+}
+
+header{
+    background-image: url(/images/violet3.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+
+#rouge{
+    background-image: url(/images/rouge.jpg);
+}
+
+#menu:not(:target){
+    display: none;
+}
+
+#menu:target{
+    display: block;
+    background-color: #e5e5e58a;
+    list-style-type: none;
+    width: 300px;
+    padding-left: 20px;
+    font-size: 40px;
+    position: absolute;
+    top: -33px;
+}
+
+#logo_menu{
+    margin-left: -20px;
+}
+
+li{
+    padding-bottom: 10px;
+}
+
+#wrap:not(:target){
+    display: none;
+}
+
+#wrap:target{
+    display: block;
+    opacity: 0.7;
+    font-size: 1.8em;
+    margin: auto;
+}
+
+#main{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    height: 841px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.iconify{
+    width: 79.81px;
+    height: 82px;
+}

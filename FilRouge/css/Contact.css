@@ -1,0 +1,151 @@
+@media screen and (max-width: 427px){
+    #rouge{
+        max-height: 926px;
+    }
+
+    .article{
+        margin-bottom: -90px;
+    }
+
+    #mail{
+        margin-bottom: -100px;
+    }
+
+    body{
+        max-width: 427px;
+    }
+}
+
+@media screen and (max-width: 833px) {
+    #pc{
+        display: none;
+    }
+
+    main{
+        background-color: rgba(137, 43, 226, 0.459);
+    }
+
+    .footer{
+        flex-direction: column;
+        height: 580px;
+        align-items: center;
+    }
+
+    #reseaux{
+        height: 50px;
+        width: 50px;
+        justify-content: center;
+    }
+}
+
+*{
+    font-family: 'rudaregular',Arial, Helvetica, sans-serif;
+}
+
+#rouge{
+    background-image: url(/images/rouge.jpg);
+}
+
+header{
+    background-image: url(/images/violet3.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu:not(:target){
+    display: none;
+}
+
+#menu:target{
+    display: block;
+    background-color: #e5e5e58a;
+    list-style-type: none;
+    width: 300px;
+    padding-left: 20px;
+    font-size: 40px;
+    position: absolute;
+    top: -33px;
+}
+
+#logo_menu{
+    margin-left: -20px;
+}
+
+#pc ul{
+    color: white;
+    list-style-type: none;
+    justify-content: space-around;
+    display: flex;
+    -webkit-text-stroke: 0.2px black;
+    margin-top: 0px;
+}
+
+#pc ul li{
+    background-color: rgba(255, 255, 255, 0.438);
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+li{
+    padding-bottom: 10px;
+}
+
+main{
+    background-color: #e5e5e58a;
+    height: 1200px;
+}
+
+#wrap:not(:target){
+    display: none;
+}
+
+#wrap:target{
+    display: block;
+    opacity: 0.7;
+    font-size: 1.8em;
+    margin: auto;
+    z-index: 1;
+}
+
+.article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact{
+    display: flex;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+#logo_contact{
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+}
+
+#mail{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin: 100px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#reseaux{
+    height: 300px;
+    width: 300px;
+    margin: 50px;
+}
+
+.iconify{
+    width: 79.81px;
+    height: 82px;
+}

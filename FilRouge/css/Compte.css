@@ -1,0 +1,165 @@
+*{
+    font-family: 'rudaregular',Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 428px;
+    height: 926px;
+}
+
+header{
+    background-image: url(/images/violet3.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+
+#rouge{
+    background-image: url(/images/rouge.jpg);
+}
+
+#menu:not(:target){
+    display: none;
+}
+
+#menu:target{
+    display: block;
+    background-color: #e5e5e58a;
+    list-style-type: none;
+    width: 300px;
+    padding-left: 20px;
+    font-size: 40px;
+    position: absolute;
+    top: -33px;
+}
+
+#logo_menu{
+    margin-left: -20px;
+}
+
+li{
+    padding-bottom: 10px;
+}
+
+#wrap:not(:target){
+    display: none;
+}
+
+#wrap:target{
+    display: block;
+    opacity: 0.7;
+    font-size: 1.8em;
+    margin: auto;
+}
+
+main{
+    height: 711px;
+}
+
+p{
+    font-weight: bold;
+    font-size:25px
+}
+
+#connection{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+legend{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+form{
+    height: 600px;
+    font-size: 35px;
+    color: white;
+}
+
+#nom{
+    margin-left: 152px;
+    
+}
+
+#prenom{
+    margin-left: 103px;
+}
+
+#email{
+    margin-left: 138px;
+}
+
+#motdepasse{
+    margin-left: 15px;
+}
+
+#confirmation{
+    margin-left: 28px;
+}
+
+#nom, #prenom, #email, #motdepasse, #confirmation{
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.360);
+    padding-top: 10px;
+    
+}
+
+#submit{
+    font-size: 40px;
+    margin-left: 140px;
+    background-color: rgba(255, 255, 255, 0.360);
+}
+
+.contact{
+    display:flex;
+    justify-content: center;
+}
+
+#contact{
+    margin-bottom: -20px;
+}
+
+#logo_contact{
+    height: 45px;
+    margin-top: 10px;
+}
+
+.infos{
+    display:flex;
+    justify-content: center;
+}
+
+#infos{
+    margin-right: 30px;
+}
+
+#logo_infos{
+    height: 40px;
+    margin-top: 18px;
+}
+
+footer{
+    background-color: #e5e5e58a;
+    padding-top: 10px;
+    height: 130px;
+}
+
+.iconify{
+    width: 79.81px;
+    height: 82px;
+}
+
+a:link{ 
+ text-decoration:none; 
+} 

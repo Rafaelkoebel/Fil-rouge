@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Compte.css">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    
+    <title>Mon compte</title>
+</head>
+<body>
+    <div id="rouge">
+        <header>
+            <a href="#menu">
+                <span class="iconify"  data-icon="gg:menu" style="color: black;"></span>
+            </a>
+            <a href="/Index.html">
+                <span class="iconify" data-icon="openmoji:strawberry" style="color: black;"></span>
+            </a>
+            <a href="#wrap">
+                <span class="iconify" data-icon="fluent:search-16-regular" style="color: black;"></span>
+            </a>
+            <ul id="menu">
+                <span class="iconify"id="logo_menu" data-icon="gg:menu" style="color: black;"></span>
+                <a href="/html/Compte.html">
+                    <li>Mon compte</li>
+                </a>
+                <a href="/html/Tendances.html">
+                    <li>Tendances</li>
+                </a>
+                <a href="/html/Recette.html">
+                    <li>Proposer une recette</li>
+                </a>
+                <a href="/html/Saisons.html">
+                    <li>Saisons</li>
+                </a>
+                <a href="/html/Minuteur.html">
+                    <li>Minuteur</li>
+                </a>
+            </ul>
+            
+        </header>
+        <main>
+            <input type="text"id="wrap"placeholder="Recherche..."/>
+            <div id="connection">
+                Connection
+            </div>
+            <form action="traitement.php"method="post">
+                    <legend>Inscrivez-vous:</legend>
+                    <label for="nom">Nom: </label>
+                        <input type="text" name="nom" id="nom" minlength="3" maxlength="7" required pattern="[A-Z]+"/><br/>
+                    <label for="prenom">Prénom:</label>
+                        <input type="text" name="prenom" id="prenom" required><br/>
+                    <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required/><br/>
+                    <label for="motdepasse">Mot de passe:</label>
+                        <input type="password" name="motdepasse" id="motdepasse" required/><br/>
+                    <label for="motdepasse">Confirmation:</label>
+                        <input type="password" name="motdepasse" id="confirmation" required/><br/>
+                    <input type="submit" value="Valider" id="submit" />
+            </form>
+        </main>
+        <footer>
+            <div id="calc"> 
+                <div class="contact">
+                    <span class="iconify" id="logo_contact"data-icon="fluent:contact-card-32-filled" style="color: black;"></span>
+                    <a href="Contact.html" title="Contact">
+                        <p id="contact">Contact</p>
+                    </a>
+                </div>
+                <div class="infos">
+                    <span class="iconify" id="logo_infos" data-icon="bi:info-circle-fill" style="color: black;"></span>
+                    <a href="Infos.html" title="Informations">
+                        <p id="infos">Infos</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

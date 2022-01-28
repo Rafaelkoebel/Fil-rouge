@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Recette.css">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    
+    <title>Recette</title>
+</head>
+<body>
+    <div id="rouge">
+        <header>
+            <a href="#menu">
+                <span class="iconify"  data-icon="gg:menu" style="color: black;"></span>
+            </a>
+            <a href="/Index.html">
+                <span class="iconify" data-icon="openmoji:strawberry" style="color: black;"></span>
+            </a>
+            <a href="#wrap">
+                <span class="iconify" data-icon="fluent:search-16-regular" style="color: black;"></span>
+            </a>
+            <ul id="menu">
+                <span class="iconify"id="logo_menu" data-icon="gg:menu" style="color: black;"></span>
+                <a href="Compte.html">
+                    <li>Mon compte</li>
+                </a>
+                <a href="Tendances.html">
+                    <li>Tendances</li>
+                </a>
+                <a href="Recette.html">
+                    <li>Proposer une recette</li>
+                </a>
+                <a href="Saisons.html">
+                    <li>Saisons</li>
+                </a>
+                <a href="Minuteur.html">
+                    <li>Minuteur</li>
+                </a>
+            </ul>
+            
+        </header>
+        <main>
+            <input type="text"id="wrap"placeholder="Recherche..."/>
+            <form action="traitement.php"method="post">
+                    <legend>Formulaire:</legend> 
+                    
+                    <label for="nom">Nom: </label>
+                        <input type="text" name="nom" id="nom" minlength="3" required/><br/>
+                    
+                    <label for="total">Temps totale:</label>
+                        <input type="number" name="total" id="total" min="0" placeholder="minutes" required/><br>
+                        
+                    <label for="preparation">Temps de préparation:</label>
+                        <input type="number" name="preparation" id="preparation" min="0" placeholder="minutes" required/><br>
+                    
+                    <label for="cuisson">Temps de cuisson:</label>
+                        <input type="number" name="cuisson" id="cuisson" min="0" placeholder="minutes" required/><br>
+
+                    <label for="ingredients">Ingrédients:</label>
+                        <select id="ingredients" name="ingredients" multiple required>
+                            <option value="farine">Farine</option>
+                            <option value="beurre">Beurre</option>
+                            <option value="sucre">Sucre</option>
+                            <option value="canelle">Canelle</option>
+                            <option value="miel">Miel</option>
+                            <option value="oeuf">Oeufs</option>
+                            <option value="groseille">Groseilles</option>
+                            <option value="fraise">Fraises</option>
+                            <option value="framboise">Framboises</option>
+                            <option value="myrtille">Myrtilles</option>
+                            <option value="cerise">Cesises</option>
+                            <option value="nergi">Nergis</option> 
+                        </select><br>
+                        
+                    <label for="ustensiles">Ustensiles:</label>
+                        <select id="ustensiles" name="ustensiles" multiple required>
+                            <option value="chinois">Chinois</option>
+                            <option value="casserole">Casserole</option>
+                            <option value="cuillière en bois">Cuillière en bois</option>
+                            <option value="couteau">Couteau</option>
+                            <option value="fouet">Fouet</option>
+                            <option value="mixeur">Mixeur</option>
+                            <option value="four">Four</option>
+                            <option value="rape">Râpe</option>
+                            <option value="bol">Bol</option>
+                            <option value="saladier">Saladier</option>
+                            <option value="congelateur">Congélateur</option>
+                        </select><br>
+                    
+                    <label for="tags">Tags:</label>
+                        <select id="tags" name="tags" multiple required>
+                            <option value="facile">Facile</option>
+                            <option value="rapide">Rapide</option>
+                            <option value="pas cher">Pas cher</option>
+                            <option value="printemps">Printemps</option>
+                            <option value="automne">Automne</option>
+                            <option value="été">Été</option>
+                            <option value="hiver">Hiver</option>
+                            <option value="confiture">Confiture</option>
+                            <option value="glace">Glace</option>
+                            <option value="Gateau">Gâteau</option>
+                            <option value="cerise">Cesise</option>
+                            <option value="yaourt">Yaourt</option> 
+                        </select><br>
+                    
+                    <label for="difficulté">Difficulté:</label>
+                        <input type="range" name="difficulté" id="difficulté" min="1" max="5"required/><br/>
+
+                    <label for="precedure">Procédure:</label>
+                        <textarea name="procedure" id="procedure" cols="30" rows="3"></textarea>
+
+                    <label for="note">Notes:</label>
+                        <textarea name="note" id="note" cols="30" rows="3"></textarea>
+
+                    <input type="submit" value="Poster" id="submit" />
+            </form>
+        </main>
+    </div>
+</body>
+</html>

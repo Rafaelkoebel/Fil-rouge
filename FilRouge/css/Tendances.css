@@ -1,0 +1,107 @@
+*{
+    font-family: 'rudaregular',Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 428px;
+    height: 926px;
+}
+
+header{
+    background-image: url(/images/violet3.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+
+#rouge{
+    background-image: url(/images/rouge.jpg);
+}
+
+#menu:not(:target){
+    display: none;
+}
+
+#menu:target{
+    display: block;
+    background-color: #e5e5e58a;
+    list-style-type: none;
+    width: 300px;
+    padding-left: 20px;
+    font-size: 40px;
+    position: absolute;
+    top: -33px;
+}
+
+#logo_menu{
+    margin-left: -20px;
+}
+
+li{
+    padding-bottom: 10px;
+}
+
+#wrap:not(:target){
+    display: none;
+}
+
+#wrap:target{
+    display: block;
+    opacity: 0.7;
+    font-size: 1.8em;
+    margin: auto;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    height: 841px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: -10px;
+    padding: 40px;
+    -webkit-text-stroke: 1px black;
+    font-size: 3em;
+    border: solid 2px black;
+}
+
+#recette1{
+    background-image: url(/images/recette1.jpg);
+}
+
+#recette2{
+    background-image: url(/images/recette2.jpg);
+}
+
+#recette3{
+    background-image: url(/images/recette3.jpg);
+}
+
+#recette4{
+    background-image: url(/images/recette4.jpg);
+}
+
+#recette5{
+    background-image: url(/images/recette5.jpg);
+}
+
+#recette6{
+    background-image: url(/images/recette6.jpg);
+}
+
+#recette7{
+    background-image: url(/images/recette7.jpg);
+}
+
+.iconify{
+    width: 79.81px;
+    height: 82px;
+}
